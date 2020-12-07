@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const gettingData = require('../middleware/gettingData')
+const gettingData = require('../controllers/gettingData')
 
 /* GET home page. */
 

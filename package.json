@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "set NODE_ENV=dev&& node ./src/app.js"
+    "start": "set NODE_ENV=dev&& node -r dotenv/config ./src/app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

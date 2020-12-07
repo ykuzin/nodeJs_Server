@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="59ede315-fa1d-4d02-bcdb-f9cea96745ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/gettingData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/gettingData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/gettingData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/gettingData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +71,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/controllers" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/middleware" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
@@ -142,6 +143,7 @@
       <workItem from="1607122273381" duration="1415000" />
       <workItem from="1607148208089" duration="19518000" />
       <workItem from="1607167743488" duration="50000" />
+      <workItem from="1607310768596" duration="1334000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(router)
 
 // set port, listen for requests
-const { PORT } = process.env
+const { PORT = 3000 } = process.env
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`)
 })

@@ -32,6 +32,7 @@ const helper = async (id, name, email, from, createdAt) => {
         }
     } catch (e) {
         console.log(e.message)
+        return { id, name, email, from, orders: [] }
     }
 }
 module.exports = helper

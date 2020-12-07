@@ -1,13 +1,13 @@
 const axios = require('axios')
-const { putToCache, getValueByKey, getAllTheData } = require('../storage')
-const helper = require('./helper')
+const { putToCache, getValueByKey } = require('../storage')
+const helper = require('../utils/helper')
 const { AUTH_TOKEN } = process.env
 const options = {
     headers: { 'X-Leeloo-AuthToken': AUTH_TOKEN },
 }
 function gettingData(req, res) {
     let page = req.query.page
-    if (page === undefined || page === null) {
+    if (!page) {
         page = 1
     }
     const offset = (Math.ceil(page / 5) - 1) * 50
@@ -17,11 +17,11 @@ function gettingData(req, res) {
             options,
         )
         .then((response) => {
-            let pm = []
-
-            response.data.data.map(({ id, name, email, from, createdAt }) => {
-                pm.push(helper(id, name, email, from, createdAt))
+            let pm = response.data.data.map(({ id, name, email, from, createdAt }) => {
+                return helper(id, name, email, from, createdAt)
             })
+
+
             Promise.all(pm)
                 .then((result) => {
                     const temp = result.slice((page - 1) * 10, page * 10)
